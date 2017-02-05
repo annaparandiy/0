@@ -5,13 +5,18 @@
 <body style="background-color:black">
     <a  > <img src="BlackRose5.jpg"; height="450"; width=" 350 " />  <a/>
 	<button onclick="like()">&#10084</button>
+	
+	<p style="color:white" ; id="output">
+	</p>
+	
+	
 	<script>
 	var likes = 0;
 	
 	function like(value) {
 	
 	likes++;
-	alert(likes);
+	output(likes);
 	}
 	</script>
 	
@@ -26,7 +31,7 @@
 	function like1(value) {
 	
 	likes1++;
-	alert(likes1);
+	output(likes1);
 	}
 	</script>
     <a  > <img src="BlackRose7.jpg"; height="450"; width=" 350 "  /> <a/>
@@ -37,8 +42,13 @@
 	function like2(value) {
 	
 	likes2++;
-	alert(likes2);
+	output(likes2);
 	}
+	function output(value) {
+		document.getElementById("output").innerHTML = value
+	}
+	
+	
 	</script>
 
 </body>
